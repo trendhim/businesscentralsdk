@@ -27,7 +27,7 @@ type JournalLine struct {
 	// The accountNumber property for the Dynamics 365 Business Central journalLine entity
 	AccountNumber string `json:"accountNumber,omitempty"`
 	// The postingDate property for the Dynamics 365 Business Central journalLine entity
-	PostingDate time.Time `json:"postingDate,omitempty"`
+	PostingDate *time.Time `json:"postingDate,omitempty"`
 	// The documentNumber property for the Dynamics 365 Business Central journalLine entity
 	DocumentNumber string `json:"documentNumber,omitempty"`
 	// The externalDocumentNumber property for the Dynamics 365 Business Central journalLine entity
@@ -40,7 +40,7 @@ type JournalLine struct {
 	Comment string `json:"comment,omitempty"`
 	Dimensions []Dimensiontype `json:"dimensions,omitempty"`
 	// The lastModifiedDateTime property for the Dynamics 365 Business Central journalLine entity
-	LastModifiedDateTime time.Time `json:"lastModifiedDateTime,omitempty"`
+	LastModifiedDateTime *time.Time    `json:"lastModifiedDateTime,omitempty"`
 	Attachments []Attachments `json:"attachments,omitempty"`
 	Account *Account `json:"account,omitempty"`
 }
