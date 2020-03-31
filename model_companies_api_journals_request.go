@@ -21,7 +21,7 @@ type CompaniesApiJournalsRequest struct {
 	// The displayName property for the Dynamics 365 Business Central journal entity
 	DisplayName string `json:"displayName,omitempty"`
 	// The lastModifiedDateTime property for the Dynamics 365 Business Central journal entity
-	LastModifiedDateTime time.Time `json:"lastModifiedDateTime,omitempty"`
+	LastModifiedDateTime *time.Time `json:"lastModifiedDateTime,omitempty"`
 	// The balancingAccountId property for the Dynamics 365 Business Central journal entity
 	BalancingAccountId string `json:"balancingAccountId,omitempty"`
 	// The balancingAccountNumber property for the Dynamics 365 Business Central journal entity
